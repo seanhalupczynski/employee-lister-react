@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PageHeader from './componenets/PageHeader';
+import SearchBar from './componenets/SearchBar';
+import TableArea from './componenets/TableArea';
+import TableHeader from './componenets/TableHeader';
+import TableData from './componenets/TableData';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <PageHeader />
+      <SearchBar />
+      <TableArea />
+      <TableHeader />
+      <TableData />
     </div>
+
   );
 }
 
