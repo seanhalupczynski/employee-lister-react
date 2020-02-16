@@ -8,26 +8,18 @@ export default class SearchBar extends React.Component {
     };
 
     handleInputChage = (event) => {
+        console.log(event.target.value)
+    };
 
-    }
-
-    handleSubmit = (event) => {
-        event.preventDefault()
-    }
 
     render(){
         return(
             <div>
-                <form>
-                    <input
-                    handleInputChage={this.handleInputChage}
-                    handleSubmit={this.handleSubmit}>
-                    </input>
-                    <button>
-                        Click Me
-                    </button>
-                </form>
+                <input
+                    onChange={this.handleInputChage}
+                >
+                </input>
             </div>
-        )
-    }
-}
+        );
+    };
+};

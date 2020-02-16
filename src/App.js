@@ -1,20 +1,16 @@
 import React from 'react';
+import Wrapper from './componenets/Wrapper';
 import PageHeader from './componenets/PageHeader';
-import SearchBar from './componenets/SearchBar';
-import TableArea from './componenets/TableArea';
-import TableHeader from './componenets/TableHeader';
-import TableData from './componenets/TableData';
+import Main from './componenets/Main';
 
 function App() {
   return (
     <div>
-      <PageHeader />
-      <SearchBar />
-      <TableArea />
-      <TableHeader />
-      <TableData />
+      <Wrapper>
+        <PageHeader/>
+        <Main />
+      </Wrapper>
     </div>
-
   );
 }
 
